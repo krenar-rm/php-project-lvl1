@@ -6,3 +6,5 @@
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/krenar-rm/php-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/krenar-rm/php-project-lvl1/actions)
+
+![Аскинема пункт 5](https://asciinema.org/a/HVz6wDHI45jx2VMaGrDImT8fN)
