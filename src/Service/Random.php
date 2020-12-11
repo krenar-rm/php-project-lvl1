@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Brain\Games;
+namespace Brain\Games\Service;
 
 class Random
 {
