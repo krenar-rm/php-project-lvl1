@@ -10,7 +10,7 @@ use Brain\Games\Service\Random;
 use function cli\line;
 use function cli\prompt;
 
-class NodScenario extends AbstractScenario
+class GcdScenario extends AbstractScenario
 {
     /**
  * @var Math
