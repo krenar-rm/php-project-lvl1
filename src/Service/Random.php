@@ -6,8 +6,8 @@ namespace Brain\Games\Service;
 
 class Random
 {
-    public function getRandomDigit(): int
+    public function getRandomDigit(int $min = 1, int $max = 100): int
     {
-        return \random_int(1, 100);
+        return \random_int($min, $max);
     }
 }
