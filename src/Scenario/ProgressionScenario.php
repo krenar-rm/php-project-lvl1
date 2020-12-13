@@ -13,18 +13,12 @@ use function cli\prompt;
 class ProgressionScenario extends AbstractScenario
 {
     /**
-     * @var Math
-     */
-    private $math;
-
-    /**
      * @var Random
      */
     private $random;
 
     public function __construct()
     {
-        $this->math = new Math();
         $this->random = new Random();
     }
 

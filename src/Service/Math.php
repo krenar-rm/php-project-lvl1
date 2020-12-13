@@ -39,4 +39,15 @@ class Math
             }
         }
     }
+
+    public function isPrime(int $n): bool
+    {
+        for ($x = 2; $x < $n; $x++) {
+            if ($n % $x === 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
