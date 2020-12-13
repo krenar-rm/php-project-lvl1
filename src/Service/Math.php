@@ -28,11 +28,11 @@ class Math
 
     public function gdc(int $val1, int $val2): int
     {
-        while(true) {
-            if($val1 === $val2) {
+        while (true) {
+            if ($val1 === $val2) {
                 return $val2;
             }
-            if($val1 > $val2) {
+            if ($val1 > $val2) {
                 $val1 -= $val2;
             } else {
                 $val2 -= $val1;

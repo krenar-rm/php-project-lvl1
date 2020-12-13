@@ -7,6 +7,7 @@ namespace Brain\Games\Scenario;
 use Brain\Games\DTO\Question;
 use Brain\Games\Service\Math;
 use Brain\Games\Service\Random;
+
 use function cli\line;
 
 class CalculatorScenario extends AbstractScenario
@@ -47,7 +48,7 @@ class CalculatorScenario extends AbstractScenario
         $randomValue1 = $this->random->getRandomDigit();
         $randomValue2 = $this->random->getRandomDigit();
 
-        $randomExpresion = self::EXPR_LIST[random_int(0,2)];
+        $randomExpresion = self::EXPR_LIST[random_int(0, 2)];
 
         switch ($randomExpresion) {
             case '-':

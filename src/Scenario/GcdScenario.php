@@ -7,6 +7,7 @@ namespace Brain\Games\Scenario;
 use Brain\Games\DTO\Question;
 use Brain\Games\Service\Math;
 use Brain\Games\Service\Random;
+
 use function cli\line;
 use function cli\prompt;
 

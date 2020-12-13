@@ -6,6 +6,7 @@ namespace Brain\Games\Scenario;
 
 use Brain\Games\DTO\Question;
 use Brain\Games\Exception\WrongAnswerException;
+
 use function cli\line;
 use function cli\prompt;
 
@@ -86,7 +87,13 @@ abstract class AbstractScenario
         if ($question->getResult() === $answer) {
             line('Correct!');
         } else {
-            throw new WrongAnswerException(sprintf(WrongAnswerException::WRONG_ANSWER_TEMPLATE_EXCEPTION, $answer, $question->getResult()));
+            throw new WrongAnswerException(
+                sprintf(
+                    WrongAnswerException::WRONG_ANSWER_TEMPLATE_EXCEPTION,
+                    $answer,
+                    $question->getResult()
+                )
+            );
         }
     }
 }
