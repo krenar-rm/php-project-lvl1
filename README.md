@@ -9,7 +9,11 @@
 
 ### Демонстрация работы:
 [Игра: "Проверка на чётность" (5)](https://asciinema.org/a/edICrlHa2V0r8nBNzOjb8eefJ)
+
 [Игра: "Калькулятор" (6)](https://asciinema.org/a/SdMcxZFoWyL6WUDgFnIUXmbdO)
+
 [Игра "НОД" (7)](https://asciinema.org/a/ICAIwbJPouFqb0LVxV0cKtUTE)
+
 [Игра "Арифметическая прогрессия" (8)](https://asciinema.org/a/FmyJ2kTim8xMWsX57wQe44Nmb)
+
 [Игра "Простое ли число?" (9)](https://asciinema.org/a/B2oKx9scN5gW9EMVZ6w6BZwdB)
