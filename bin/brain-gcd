@@ -4,5 +4,8 @@
 
 require 'vendor/autoload.php';
 
-$scenario = new \Brain\Games\Scenario\GcdScenario();
-$scenario->execute();
+use function Brain\Games\run;
+use function Brain\Games\Game\getGcd;
+use function Brain\Games\Game\getGcdDescription;
+
+run(getGcdDescription(), getGcd());

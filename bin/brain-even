@@ -4,5 +4,8 @@
 
 require 'vendor/autoload.php';
 
-$scenario = new \Brain\Games\Scenario\EvenOrNotScenario();
-$scenario->execute();
+use function Brain\Games\run;
+use function Brain\Games\Game\getEven;
+use function Brain\Games\Game\getEvenDescription;
+
+run(getEvenDescription(), getEven());

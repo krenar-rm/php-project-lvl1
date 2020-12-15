@@ -1,23 +1,26 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Brain\Games;
+
+use Brain\Games\Exception\WrongAnswerException;
 
 use function cli\line;
 use function cli\prompt;
 
-class Cli
+function run(string $gameDescription, callable $gameFunction)
 {
-    /**
-     * @var string
-     */
-    private static $name;
+    line('Welcome to the Brain Game!');
+    $userName = prompt('May I have your name?');
+    line('Hello, %s!', $userName);
 
-    public static function welcomeScenario()
-    {
-        line('Welcome to the Brain Game!');
-        self::$name = prompt('May I have your name?');
-        line('Hello, %s!', self::$name);
+    try {
+        line($gameDescription);
+
+        startGame($gameFunction);
+
+        line('Congratulations, %s!', $userName);
+    } catch (WrongAnswerException $exception) {
+        line($exception->getMessage());
+        line('Let\'s try again, %s!', $userName);
     }
 }
