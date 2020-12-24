@@ -4,8 +4,4 @@
 
 require 'vendor/autoload.php';
 
-use function Brain\Games\run;
-use function Brain\Games\Game\getPrime;
-use function Brain\Games\Game\getPrimeDescription;
-
-run(getPrimeDescription(), getPrime());
+\Brain\Games\Games\Prime\runPrime();

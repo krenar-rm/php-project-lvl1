@@ -4,8 +4,4 @@
 
 require 'vendor/autoload.php';
 
-use function Brain\Games\run;
-use function Brain\Games\Game\getGcd;
-use function Brain\Games\Game\getGcdDescription;
-
-run(getGcdDescription(), getGcd());
+\Brain\Games\Games\Gcd\runGcd();

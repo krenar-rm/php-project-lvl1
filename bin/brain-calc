@@ -4,8 +4,4 @@
 
 require 'vendor/autoload.php';
 
-use function Brain\Games\run;
-use function Brain\Games\Game\getCalculator;
-use function Brain\Games\Game\getCalculatorDescription;
-
-run(getCalculatorDescription(), getCalculator());
+\Brain\Games\Games\Calculator\runCalculator();

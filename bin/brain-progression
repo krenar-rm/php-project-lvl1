@@ -4,8 +4,4 @@
 
 require 'vendor/autoload.php';
 
-use function Brain\Games\run;
-use function Brain\Games\Game\getProgression;
-use function Brain\Games\Game\getProgressionDescription;
-
-run(getProgressionDescription(), getProgression());
+\Brain\Games\Games\Progression\runProgression();
