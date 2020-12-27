@@ -7,14 +7,18 @@
 [![Actions Status](https://github.com/krenar-rm/php-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/krenar-rm/php-project-lvl1/actions)
 
 ### Демонстрация работы:
-[Игра: "Проверка на чётность" (5)](https://asciinema.org/a/edICrlHa2V0r8nBNzOjb8eefJ)
 
-[Игра: "Калькулятор" (6)](https://asciinema.org/a/SdMcxZFoWyL6WUDgFnIUXmbdO)
+####Игра: "Проверка на чётность" (5)
+[![Игра: "Проверка на чётность" (5)](https://asciinema.org/a/pxmCOrxJRgWhE0F7wsuScTQ7r.png)](https://asciinema.org/a/pxmCOrxJRgWhE0F7wsuScTQ7r)
 
-[Игра "НОД" (7)](https://asciinema.org/a/ICAIwbJPouFqb0LVxV0cKtUTE)
+####Игра: "Калькулятор" (6)
+[![Игра: "Калькулятор" (6)](https://asciinema.org/a/JpAPzS8Y6bvjr2wAm1f5qYlWn.png)](https://asciinema.org/a/JpAPzS8Y6bvjr2wAm1f5qYlWn)
 
-[Игра "Арифметическая прогрессия" (8)](https://asciinema.org/a/FmyJ2kTim8xMWsX57wQe44Nmb)
+####Игра "НОД" (7)
+[![Игра "НОД" (7)](https://asciinema.org/a/3oaNNFeKHM3id3knhSoPTfOjt.png)](https://asciinema.org/a/3oaNNFeKHM3id3knhSoPTfOjt)
 
-[Игра "Простое ли число?" (9)](https://asciinema.org/a/B2oKx9scN5gW9EMVZ6w6BZwdB)
+####Игра "Арифметическая прогрессия" (8)
+[![Игра "Арифметическая прогрессия" (8)](https://asciinema.org/a/JAPMdYY3Te4pCY905Jcg5Nru6.png)](https://asciinema.org/a/JAPMdYY3Te4pCY905Jcg5Nru6)
 
-[![asciicast](https://asciinema.org/a/B2oKx9scN5gW9EMVZ6w6BZwdB.png)](https://asciinema.org/a/B2oKx9scN5gW9EMVZ6w6BZwdB)
+####Игра "Простое ли число?" (9)
+[![Игра "Арифметическая прогрессия" (8)](https://asciinema.org/a/Z69toOteGeqC77JshBFLyKDRh.png)](https://asciinema.org/a/Z69toOteGeqC77JshBFLyKDRh)
