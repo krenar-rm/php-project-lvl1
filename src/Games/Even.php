@@ -9,7 +9,7 @@ function runEven()
     define('GAME_DESCRIPTION', 'Answer "yes" if given number is prime. Otherwise answer "no".');
 
     run(
-        function () {
+        function (): array {
             $randomValue = \random_int(1, 100);
 
             return [

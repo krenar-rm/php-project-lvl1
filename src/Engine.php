@@ -9,7 +9,7 @@ use function cli\prompt;
 
 const NUMBER_OF_GAME_ROUNDS = 3;
 
-function run(callable $genRoundData)
+function run(callable $genRoundData): void
 {
     line('Welcome to the Brain Game!');
     $userName = prompt('May I have your name?');
@@ -27,7 +27,7 @@ function run(callable $genRoundData)
     }
 }
 
-function startGameRounds(callable $genRoundData)
+function startGameRounds(callable $genRoundData): void
 {
     for ($i = 1; $i <= NUMBER_OF_GAME_ROUNDS; $i++) {
         $roundData = $genRoundData();

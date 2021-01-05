@@ -9,7 +9,7 @@ function runProgression()
     define('GAME_DESCRIPTION', 'What number is missing in the progression?');
 
     run(
-        function () {
+        function (): array {
             $progression = createProgression(
                 \random_int(1, 100),
                 \random_int(2, 5),

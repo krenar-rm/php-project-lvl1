@@ -9,7 +9,7 @@ function runGcd()
     define('GAME_DESCRIPTION', 'Find the greatest common divisor of given numbers.');
 
     run(
-        function () {
+        function (): array {
             $randomValue1 = \random_int(1, 100);
             $randomValue2 = \random_int(1, 100);
 
