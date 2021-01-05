@@ -4,10 +4,10 @@ namespace Brain\Games\Games\Even;
 
 use function Brain\Games\Games\Engine\run;
 
-const GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
-
 function runEven()
 {
+    define('GAME_DESCRIPTION', 'Answer "yes" if given number is prime. Otherwise answer "no".');
+
     run(
         function () {
             $randomValue = \random_int(1, 100);

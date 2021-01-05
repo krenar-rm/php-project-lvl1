@@ -4,8 +4,6 @@ namespace Brain\Games\Games\Calculator;
 
 use function Brain\Games\Games\Engine\run;
 
-const GAME_DESCRIPTION = 'What is the result of the expression?';
-
 const OPERATORS = [
     '-',
     '+',
@@ -14,8 +12,10 @@ const OPERATORS = [
 
 function runCalculator()
 {
+    define('GAME_DESCRIPTION', 'What is the result of the expression?');
+
     run(
-        static function () {
+        function () {
             $val1 = \random_int(1, 100);
             $val2 = \random_int(1, 100);
             $operator = OPERATORS[\random_int(0, \count(OPERATORS) - 1)];
