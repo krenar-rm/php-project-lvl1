@@ -7,16 +7,18 @@ use Brain\Games\Exception\WrongAnswerException;
 use function cli\line;
 use function cli\prompt;
 
-function run(string $gameDescription, callable $gameFunction)
+const NUMBER_OF_GAME_ROUNDS = 3;
+
+function run(callable $genRoundData)
 {
     line('Welcome to the Brain Game!');
     $userName = prompt('May I have your name?');
     line('Hello, %s!', $userName);
 
     try {
-        line($gameDescription);
+        line(GAME_DESCRIPTION);
 
-        startGameRounds($gameFunction);
+        startGameRounds($genRoundData);
 
         line('Congratulations, %s!', $userName);
     } catch (WrongAnswerException $exception) {
@@ -25,22 +27,22 @@ function run(string $gameDescription, callable $gameFunction)
     }
 }
 
-function startGameRounds(callable $gameFunction)
+function startGameRounds(callable $genRoundData)
 {
     for ($i = 1; $i <= NUMBER_OF_GAME_ROUNDS; $i++) {
-        $question = $gameFunction();
-        line('Question: %s', $question['question']);
+        $roundData = $genRoundData();
+        line('Question: %s', $roundData['question']);
 
         $answer = prompt('Your answer');
 
-        if ($question['correctAnswer'] === $answer) {
+        if ($roundData['correctAnswer'] === $answer) {
             line('Correct!');
         } else {
             throw new WrongAnswerException(
                 sprintf(
                     WrongAnswerException::WRONG_ANSWER_TEMPLATE_EXCEPTION,
                     $answer,
-                    $question['correctAnswer']
+                    $roundData['correctAnswer']
                 )
             );
         }
