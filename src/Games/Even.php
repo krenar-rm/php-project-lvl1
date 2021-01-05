@@ -4,7 +4,7 @@ namespace Brain\Games\Games\Even;
 
 use function Brain\Games\Games\Engine\run;
 
-function runEven()
+function runEven(): void
 {
     define('GAME_DESCRIPTION', 'Answer "yes" if given number is prime. Otherwise answer "no".');
 

@@ -10,7 +10,7 @@ const OPERATORS = [
     '*'
 ];
 
-function runCalculator()
+function runCalculator(): void
 {
     define('GAME_DESCRIPTION', 'What is the result of the expression?');
 

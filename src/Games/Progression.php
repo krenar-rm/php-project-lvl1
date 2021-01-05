@@ -4,7 +4,7 @@ namespace Brain\Games\Games\Progression;
 
 use function Brain\Games\Games\Engine\run;
 
-function runProgression()
+function runProgression(): void
 {
     define('GAME_DESCRIPTION', 'What number is missing in the progression?');
 

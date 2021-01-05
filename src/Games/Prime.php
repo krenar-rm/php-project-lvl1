@@ -4,7 +4,7 @@ namespace Brain\Games\Games\Prime;
 
 use function Brain\Games\Games\Engine\run;
 
-function runPrime()
+function runPrime(): void
 {
     define('GAME_DESCRIPTION', 'Answer "yes" if given number is prime. Otherwise answer "no".');
 
