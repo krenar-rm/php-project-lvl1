@@ -4,11 +4,12 @@ namespace Brain\Games\Games\Gcd;
 
 use function Brain\Games\Games\Engine\run;
 
+const GAME_DESCRIPTION = 'Find the greatest common divisor of given numbers.';
+
 function runGcd(): void
 {
-    define('GAME_DESCRIPTION', 'Find the greatest common divisor of given numbers.');
-
     run(
+        GAME_DESCRIPTION,
         function (): array {
             $randomValue1 = \random_int(1, 100);
             $randomValue2 = \random_int(1, 100);

@@ -4,11 +4,12 @@ namespace Brain\Games\Games\Progression;
 
 use function Brain\Games\Games\Engine\run;
 
+const GAME_DESCRIPTION = 'What number is missing in the progression?';
+
 function runProgression(): void
 {
-    define('GAME_DESCRIPTION', 'What number is missing in the progression?');
-
     run(
+        GAME_DESCRIPTION,
         function (): array {
             $progression = createProgression(
                 \random_int(1, 100),

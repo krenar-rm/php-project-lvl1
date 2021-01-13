@@ -4,11 +4,12 @@ namespace Brain\Games\Games\Even;
 
 use function Brain\Games\Games\Engine\run;
 
+const GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 function runEven(): void
 {
-    define('GAME_DESCRIPTION', 'Answer "yes" if given number is prime. Otherwise answer "no".');
-
     run(
+        GAME_DESCRIPTION,
         function (): array {
             $randomValue = \random_int(1, 100);
 

@@ -9,26 +9,14 @@ use function cli\prompt;
 
 const NUMBER_OF_GAME_ROUNDS = 3;
 
-function run(callable $genRoundData): void
+function run(string $gameDescription, callable $genRoundData): void
 {
     line('Welcome to the Brain Game!');
     $userName = prompt('May I have your name?');
     line('Hello, %s!', $userName);
 
-    try {
-        line(GAME_DESCRIPTION);
+    line($gameDescription);
 
-        startGameRounds($genRoundData);
-
-        line('Congratulations, %s!', $userName);
-    } catch (WrongAnswerException $exception) {
-        line($exception->getMessage());
-        line('Let\'s try again, %s!', $userName);
-    }
-}
-
-function startGameRounds(callable $genRoundData): void
-{
     for ($i = 1; $i <= NUMBER_OF_GAME_ROUNDS; $i++) {
         $roundData = $genRoundData();
         line('Question: %s', $roundData['question']);
@@ -38,13 +26,19 @@ function startGameRounds(callable $genRoundData): void
         if ($roundData['correctAnswer'] === $answer) {
             line('Correct!');
         } else {
-            throw new WrongAnswerException(
+            line(
                 sprintf(
-                    WrongAnswerException::WRONG_ANSWER_TEMPLATE_EXCEPTION,
+                    '\'%s\' is wrong answer ;(. Correct answer was \'%s\'.',
                     $answer,
                     $roundData['correctAnswer']
                 )
             );
+
+            line('Let\'s try again, %s!', $userName);
+
+            return;
         }
     }
+
+    line('Congratulations, %s!', $userName);
 }

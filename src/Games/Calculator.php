@@ -4,6 +4,8 @@ namespace Brain\Games\Games\Calculator;
 
 use function Brain\Games\Games\Engine\run;
 
+const GAME_DESCRIPTION = 'What is the result of the expression?';
+
 const OPERATORS = [
     '-',
     '+',
@@ -12,9 +14,8 @@ const OPERATORS = [
 
 function runCalculator(): void
 {
-    define('GAME_DESCRIPTION', 'What is the result of the expression?');
-
     run(
+        GAME_DESCRIPTION,
         function (): array {
             $val1 = \random_int(1, 100);
             $val2 = \random_int(1, 100);
@@ -29,7 +30,7 @@ function runCalculator(): void
                         $val2,
                     ]
                 ),
-                'correctAnswer' => (string) makeArithmeticOperation(
+                'correctAnswer' => (string) calculate(
                     $val1,
                     $val2,
                     $operator
@@ -39,7 +40,7 @@ function runCalculator(): void
     );
 }
 
-function makeArithmeticOperation(int $val1, int $val2, string $operator): int
+function calculate(int $val1, int $val2, string $operator): int
 {
     switch ($operator) {
         case '-':
